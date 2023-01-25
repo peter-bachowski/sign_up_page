@@ -1,0 +1,15 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin: 0px;
+}
+#leftContainer {
+  background-image: url("./images/form-background.jpg");
+  width: 40%;
+  height: 100%;
+}
+#rightContainer {
+  width: auto;
+  height: 100%;
+}
