@@ -4,12 +4,76 @@ html, body {
   display: flex;
   margin: 0px;
 }
+
+@font-face {
+  font-family: "norseBold";
+  src: url(Norse-Bold.otf) format("opentype");  
+}
+
 #leftContainer {
   background-image: url("./images/form-background.jpg");
-  width: 40%;
+  width: 30%;
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
-#rightContainer {
-  width: auto;
+
+#imageCredit {
+  color: white;
+  font-size: 100%;
+  position: absolute;
+  bottom: 0%;
+  padding: 5px;
+}
+
+#imageCredit > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#leftContainer > a:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+#logoDiv {
+  font-family: "norseBold";
+  color: white;
+  font-size: 70px;
+  height: 100px;
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.3);
+  position: relative;
+  top: 25%;
+}
+
+#logoDiv > img {
   height: 100%;
+  width: auto;
+}
+
+#rightContainer {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fillerArea {
+  height: 500px;
+  width: 100%;
+  background-color: #e8e8e8;
+}
+
+#mainFormContainer {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.fillerArea, #mainFormContainer, #rightContainer, #logoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
