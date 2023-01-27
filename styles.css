@@ -3,6 +3,7 @@ html, body {
   height: 100vh;
   display: flex;
   margin: 0px;
+  background-image: url("./images/form-background.jpg");
 }
 
 @font-face {
@@ -11,7 +12,6 @@ html, body {
 }
 
 #leftContainer {
-  background-image: url("./images/form-background.jpg");
   width: 30%;
   height: 100%;
   display: flex;
@@ -27,7 +27,6 @@ html, body {
 }
 
 #imageCredit > a {
-  text-decoration: none;
   color: inherit;
 }
 
@@ -36,16 +35,20 @@ html, body {
   cursor: pointer;
 }
 
+#logoDivContainer {
+  width: 100%;
+  height: 25%;
+}
+
 #logoDiv {
   font-family: "norseBold";
   color: white;
   font-size: 70px;
-  height: 100px;
+  height: 50%;
   width: 100%;
-  padding: 5px;
   background-color: rgba(0,0,0,0.3);
   position: relative;
-  top: 25%;
+  top: 50%;
 }
 
 #logoDiv > img {
@@ -57,17 +60,16 @@ html, body {
   width: 100%;
   height: 100%;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .fillerArea {
-  height: 500px;
+  height: 25%;
   width: 100%;
   background-color: #e8e8e8;
 }
 
 #mainFormContainer {
-  height: 100%;
+  height: 50%;
   width: 100%;
   background-color: white;
 }
