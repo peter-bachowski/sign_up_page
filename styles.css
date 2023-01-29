@@ -7,8 +7,8 @@ html, body {
 }
 
 @font-face {
-  font-family: "norseBold";
-  src: url(Norse-Bold.otf) format("opentype");  
+  font-family: 'norseText';
+  src: url(./fonts/Norse-Bold.otf) format("opentype");  
 }
 
 #leftContainer {
@@ -41,7 +41,7 @@ html, body {
 }
 
 #logoDiv {
-  font-family: "norseBold";
+  font-family: 'norseText';
   color: white;
   font-size: 70px;
   height: 50%;
