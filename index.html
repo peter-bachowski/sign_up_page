@@ -6,26 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Italiana" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto" />
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="script.js" defer></script>
   <title>My First Sign Up Page</title>
 </head>
 
 <body>
   <div id="leftContainer">
-    <div id="logoDivContainer">
-      <div id="logoDiv">
-        <img src="./images/odin-lined.png">Odin
-      </div>
+
+    <div id="logoDiv">
+      <img src="./images/logo.png">House of Beauty
     </div>
+
     <div id="imageCredit">
       Photo by <a href="https://unsplash.com/@baehaki/collections">Baehaki Hariri</a> on <a
-        href="https://unsplash.com/">Unsplash</a>
+        ref="https://unsplash.com/">Unsplash</a>
     </div>
+
   </div>
+
   <div id="rightContainer">
+
     <div class="fillerArea" id="filler1">
       <p>This is not a real online service! You know you need something like this in your life to help you realize your
         deepest dreams. Sign up now to get started. <br><br>You know you want to.</p>
     </div>
+
     <div id="mainFormContainer">
       <div id="mainForm">
         <h3>Let's do it!</h3>
@@ -67,12 +75,14 @@
       </div>
 
     </div>
+
     <div class="fillerArea" id="filler2">
       <div id="filler2ContentContainer">
-        <input type="submit" form="myForm" value="Create Account"></input>
+        <button id="submitButton" type="submit" form="myForm">Create Account</button>
         <p>Already have an account? <a href="">Log in</a></p>
       </div>
     </div>
+
   </div>
 </body>
 

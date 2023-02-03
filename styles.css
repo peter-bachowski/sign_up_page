@@ -5,6 +5,7 @@ html, body {
   margin: 0px;
   font-family: calibri;
   background-image: url("./images/form-background.jpg");
+  min-height: 400px;
 }
 
 @font-face {
@@ -13,10 +14,23 @@ html, body {
 }
 
 #leftContainer {
-  width: 75%;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
+}
+
+#leftContainer > a:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+#rightContainer {
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 
 #imageCredit {
@@ -31,26 +45,17 @@ a {
   color: inherit;
 }
 
-
-#leftContainer > a:hover {
-  color: blue;
-  cursor: pointer;
-}
-
-#logoDivContainer {
-  width: 100%;
-  height: 35%;
-}
-
 #logoDiv {
-  font-family: "norseBold";
+  font-family: "Italiana";
   color: white;
-  font-size: 70px;
-  height: 50%;
+  font-size: 50px;
+  height: 150px;
   width: 100%;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.5);
   position: relative;
-  top: 50%;
+  top: 150px;
+  justify-content: center;
+  align-items: center;
 }
 
 #logoDiv > img {
@@ -58,14 +63,10 @@ a {
   width: auto;
 }
 
-#rightContainer {
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-}
+
 
 .fillerArea {
-  height: 35%;
+  min-height: 300px;
   width: 100%;
   background-color: #e8e8e8;
   flex-direction: column;
@@ -89,7 +90,7 @@ a {
   width: 70%;
 }
 
-#filler2 > div > input{
+#filler2 > div > button{
   width: 200px;
   height: 40px;
   color: white;
@@ -109,8 +110,8 @@ a {
 }
 
 #mainFormContainer {
-
   width: 100%;
+  height: 100%;
   background-color: white;
 }
 
@@ -124,15 +125,12 @@ a {
 
 #mainFormContainer, #rightContainer, #logoDiv {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 form {
   display: flex;
   flex-wrap: wrap;
-  width: 550px;
-  margin-bottom: 40px;
+  max-width: 550px;
   padding: 0px;
   justify-content: flex-start;
 }
@@ -150,3 +148,4 @@ input {
   margin-right: 50px;
   margin-bottom: 15px;
 }
+
