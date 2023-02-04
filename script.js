@@ -1,5 +1,3 @@
-
-
 const submitBtn = document.getElementById("submitButton"), passwordElmnt = document.getElementById("password"), passwordConfirmElmnt = document.getElementById("confirm_password");
 
 submitBtn.onclick = function() {
@@ -13,15 +11,19 @@ submitBtn.onclick = function() {
   }
 }
 
-window.addEventListener("resize",
-  function() {
-    let width = $("body").width();
-    if (width <= 900) {
-      document.body.style.display = "block";
-      document.getElementById("leftContainer").style.height = "400px";
-      
-    }
-    else {
-      document.body.style.display = "flex";
-    }
-  })
+function checkWidth() {
+  let width = $("body").width();
+  if (width <= 980) {
+    document.body.style.display = "block";
+    document.getElementById("leftContainer").style.height = "400px";
+  }
+  else {
+    document.body.style.display = "flex";
+    document.getElementById("leftContainer").style.height = "100%";
+  }
+}
+
+window.onload = () => { checkWidth(); }
+
+window.addEventListener("resize", checkWidth);
+
