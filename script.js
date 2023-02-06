@@ -20,6 +20,7 @@ function checkWidth() { //checks width of the page, then sets the order of the p
   if (width <= 980) { //width less than or equal to 980 pixels will center the content
     document.body.style.display = "block";
     document.getElementById("leftContainer").style.height = "400px";
+    document.body.style.height = "100%";
     document.getElementById("mainForm").style.alignItems = "center";
     document.getElementById("myForm").style.justifyContent = "center"
     document.getElementById("filler1").style.alignItems = "center";
@@ -28,6 +29,7 @@ function checkWidth() { //checks width of the page, then sets the order of the p
   }
   else { //width greater than 980 pixels will set the page flow to the original positions and order
     document.body.style.display = "flex";
+    document.body.style.height = "";
     document.getElementById("leftContainer").style.height = "100%";
     document.getElementById("filler1").style.alignItems = "";
     document.getElementById("mainForm").style.alignItems = "";
